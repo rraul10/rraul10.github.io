@@ -3,132 +3,69 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
-
 body {
-    background-color: #f4f4f9;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+    color: #333;
     padding: 20px;
 }
-
-/* Contenedor principal */
 .cv-container {
     max-width: 800px;
+    width: 100%;
     background-color: #fff;
+    padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
-/* Encabezado */
-header {
+h1, h2 {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+h1 {
+    font-size: 2rem;
     text-align: center;
-    padding: 20px;
-    background-color: #009688;
-    color: #fff;
-    border-radius: 8px 8px 0 0;
+    margin-bottom: 1rem;
+    color: #0073e6;
 }
-
-header h1 {
-    font-size: 2em;
-    margin-bottom: 5px;
-}
-
-header p {
-    font-size: 1.2em;
-    font-weight: 300;
-}
-
-/* Secciones */
-section {
-    margin-top: 20px;
-    padding: 10px;
-}
-
 h2 {
-    color: #333;
-    font-size: 1.5em;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 0.3em;
+    margin-bottom: 1rem;
 }
-
-/* Perfil */
-.profile p {
-    font-size: 1em;
-    color: #555;
+p, ul, li {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
-
-/* Habilidades */
-.skills .skill-icons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
 }
-
+.skill-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
 .skill-icons img {
-    height: 35px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
 }
-
-/* Formación Académica */
-.education ul {
-    list-style-type: none;
+.skill-icons img:hover {
+    transform: scale(1.1);
 }
-
-.education li {
-    font-size: 1em;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-.education strong {
-    color: #333;
-}
-
-/* Intereses */
-.interests p {
-    font-size: 1em;
-    color: #555;
-}
-
-/* Contacto */
-.contact p {
-    font-size: 1em;
-    color: #555;
-}
-
 .contact a {
-    color: #009688;
+    color: #0073e6;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
-
 .contact a:hover {
-    text-decoration: underline;
+    color: #005bb5;
 }
-
-/* Estilos para la sección del nombre */
-.name-section h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    text-align: center;
-    color: #333333;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    border-bottom: 3px solid #336791;
-    padding-bottom: 10px;
-}
-
-/* Otros estilos generales (opcional) */
-.cv-container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-}
-
-header h1, .profile h2, .skills h2, .education h2, .interests h2, .contact h2 {
-    color: #336791;
-}
-
