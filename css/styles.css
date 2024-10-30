@@ -1,0 +1,134 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.cv-container {
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #009688;
+    color: #fff;
+    border-radius: 8px 8px 0 0;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Secciones */
+section {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Perfil */
+.profile p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Habilidades */
+.skills .skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-icons img {
+    height: 35px;
+}
+
+/* Formación Académica */
+.education ul {
+    list-style-type: none;
+}
+
+.education li {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.education strong {
+    color: #333;
+}
+
+/* Intereses */
+.interests p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Contacto */
+.contact p {
+    font-size: 1em;
+    color: #555;
+}
+
+.contact a {
+    color: #009688;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para la sección del nombre */
+.name-section h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    color: #333333;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 3px solid #336791;
+    padding-bottom: 10px;
+}
+
+/* Otros estilos generales (opcional) */
+.cv-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+header h1, .profile h2, .skills h2, .education h2, .interests h2, .contact h2 {
+    color: #336791;
+}
+
