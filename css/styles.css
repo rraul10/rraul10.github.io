@@ -210,6 +210,7 @@ body {
 		background-color var(--trans-dur),
 		color var(--trans-dur);
 }
+
 .pl {
 	display: block;
 	margin: auto;
@@ -218,7 +219,7 @@ body {
 
 	&__worm1,
 	&__worm2 {
-		animation: worm1-move 1.5s cubic-bezier(0.37,0,0.63,1) infinite;
+		animation: worm1-move 5s cubic-bezier(0.37, 0, 0.63, 1) infinite;
 	}
 	&__worm2 {
 		animation-name: worm2-move;
@@ -228,8 +229,8 @@ body {
 /* Dark theme */
 @media (prefers-color-scheme: dark) {
 	:root {
-		--bg: hsl(var(--hue),10%,10%);
-		--fg: hsl(var(--hue),10%,90%);
+		--bg: hsl(var(--hue), 10%, 10%);
+		--fg: hsl(var(--hue), 10%, 90%);
 	}
 }
 
@@ -239,10 +240,10 @@ body {
 		stroke-dashoffset: -2.355;
 	}
 	to {
-		// move by both worm circumferences (78.54)
 		stroke-dashoffset: 76.185;
 	}
 }
+
 @keyframes worm2-move {
 	from {
 		stroke-dashoffset: 16.492;
